@@ -84,7 +84,7 @@ nav{
         width: 100vw;
         zoom: 1;
     }
-}
+/*}
 #home_image{
     animation: zoomout .5s alternate ;
     z-index: -1;
@@ -95,7 +95,7 @@ nav{
     height: 100vh;
     width: 100vw;
     zoom: 1;
-}
+}*/
 
 #status{
     margin-left: 8vw; margin-right: 8vw;
