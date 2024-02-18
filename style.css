@@ -1,0 +1,110 @@
+:root {
+    --cor-primaria: #0D1B2A;  /* Azul escuro */
+    --cor-primaria-nav: #0d1b2a96;  /* Azul escuro */
+    --cor-secundaria: #1B263B;  /* Azul médio */
+    --cor-secundaria-nav: #1b263b62;  /* Azul médio */
+    --cor-texto-claro: #E0E1DD;  /* Cinza claro */
+    --cor-texto-escuro: #415A77;  /* Azul acinzentado */
+  }
+@keyframes mover {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 100;}
+}
+body{
+    padding: 0vw;
+    margin: 0vw;
+    font-family:  'Nunito', sans-serif;
+    color: var(--cor-texto-claro);
+    background: linear-gradient(to bottom left, #3c00c9, #1000ee, #00b7ff) no-repeat center fixed;
+}
+nav{
+    animation: mover .5s alternate ;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 1vw; left: .5vw; /*Posição barra*/
+    list-style: none;
+    padding-top: 12vw; padding: 2vw;/*Tamanho barra*/
+    margin: 1vw;
+    background-color: var(--cor-primaria-nav);
+    border-radius: 100px; /*Borda redonda nav*/
+}
+
+.nav-btn{
+    text-decoration: none;
+    font-size: 2vw;
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-secundaria-nav);
+    padding: 1vw;
+    border-radius: 100px; /*Borda redonda btns nav*/
+    margin: .5vw; /*espaçamento botões*/
+}
+
+.nav-btn:hover{
+    background-color: var(--cor-texto-claro);
+    color: var(--cor-texto-escuro);
+    transition: 0.2s ease-in-out;
+}
+
+#banner{
+    animation: mover .9s alternate ;
+    background-color: #830000;
+    font-size: .8vw;
+    display: flex;
+    position: fixed;
+    margin: 0px;
+    padding-left: 36.8vw;
+    padding-right: 36.7vw;
+}
+/*repetido*/
+
+#welcome{
+    font-size: 2vw;
+    display: block;
+    padding-top: 23vw;
+    padding-bottom: 25vw;
+    padding-left: 21vw;
+}
+#greeting{
+    animation: mover .5s alternate ;
+}
+@keyframes zoomout{
+    0% {transform: scale(1.4)}
+    100% {transform: scale(1) }
+}
+#home_image{
+    animation: zoomout .5s alternate ;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    zoom: 1;
+}
+
+#status{
+    margin-left: 8vw; margin-right: 8vw;
+    background-color: #e6e6e6;
+    border: #dadada solid .1vw;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px 1px #dadada;
+}
+#bl-status{
+    display: flex;
+    font-weight: bolder ;
+    color: red;
+}
+#opt-open{
+    color: var(--cor-texto-escuro);
+}
+.ratting{
+    color: var(--cor-texto-escuro);  
+}
+
+#front{
+    width: 30vw;
+    height: 33vh;
+    border-radius: 20px;
+}
